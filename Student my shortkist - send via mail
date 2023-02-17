@@ -1,0 +1,19 @@
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.OutputType
+
+WDS.sampleResult.sampleStart()
+WDS.browser.get("https://demounidirectcrm.gaipp.com/signin");
+WDS.browser.findElement(org.openqa.selenium.By.name("user")).sendKeys("admission@unidirect.org");
+WDS.browser.findElement(org.openqa.selenium.By.name("password")).sendKeys("london2020");
+WDS.browser.findElement(org.openqa.selenium.By.xpath("//*[@id='submit']")).click();
+java.lang.Thread.sleep(40000);
+WDS.browser.findElement(org.openqa.selenium.By.xpath('//body/app-root[1]/app-crm-main[1]/app-crm-navbar[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[1]')).click();
+java.lang.Thread.sleep(5000);
+WDS.browser.findElement(org.openqa.selenium.By.xpath('//*[@id="studentList"]/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[3]/div/a/strong')).click();
+java.lang.Thread.sleep(5000);
+WDS.browser.findElement(org.openqa.selenium.By.xpath('//*[@id="viewStudentDetails"]/div[2]/app-student-view/div[2]/div/div[1]/div/ul/li[3]/a')).click();
+java.lang.Thread.sleep(5000);
+WDS.browser.findElement(org.openqa.selenium.By.xpath('//*[@id="viewStudentDetails"]/div[2]/app-student-view/div[2]/div/div[2]/app-my-shortlist/div[1]/div[1]/div[2]/button[2]')).click();
+java.lang.Thread.sleep(5000);
